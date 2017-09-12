@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702F3A821F6815290083E6F9 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702F3A811F6815290083E6F9 /* ViewViewController.swift */; };
 		709898C91F67E21F004FB6BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709898C81F67E21F004FB6BE /* AppDelegate.swift */; };
-		709898CB1F67E21F004FB6BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709898CA1F67E21F004FB6BE /* ViewController.swift */; };
 		709898CE1F67E21F004FB6BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709898CC1F67E21F004FB6BE /* Main.storyboard */; };
 		709898D11F67E21F004FB6BE /* MagazineSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 709898CF1F67E21F004FB6BE /* MagazineSave.xcdatamodeld */; };
 		709898D31F67E21F004FB6BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709898D21F67E21F004FB6BE /* Assets.xcassets */; };
 		709898D61F67E21F004FB6BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709898D41F67E21F004FB6BE /* LaunchScreen.storyboard */; };
 		709898E11F67E21F004FB6BE /* MagazineSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709898E01F67E21F004FB6BE /* MagazineSaveTests.swift */; };
 		709898EC1F67E21F004FB6BE /* MagazineSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709898EB1F67E21F004FB6BE /* MagazineSaveUITests.swift */; };
+		709898FB1F67E6A6004FB6BE /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709898FA1F67E6A6004FB6BE /* CollectionTableViewController.swift */; };
+		709898FD1F67E6B1004FB6BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709898FC1F67E6B1004FB6BE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		702F3A811F6815290083E6F9 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 		709898C51F67E21F004FB6BE /* MagazineSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagazineSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709898C81F67E21F004FB6BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		709898CA1F67E21F004FB6BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		709898CD1F67E21F004FB6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		709898D01F67E21F004FB6BE /* MagazineSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagazineSave.xcdatamodel; sourceTree = "<group>"; };
 		709898D21F67E21F004FB6BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		709898E71F67E21F004FB6BE /* MagazineSaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagazineSaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		709898EB1F67E21F004FB6BE /* MagazineSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineSaveUITests.swift; sourceTree = "<group>"; };
 		709898ED1F67E21F004FB6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709898FA1F67E6A6004FB6BE /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
+		709898FC1F67E6B1004FB6BE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		709898FF1F67E849004FB6BE /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +104,9 @@
 		709898C71F67E21F004FB6BE /* MagazineSave */ = {
 			isa = PBXGroup;
 			children = (
+				709898FE1F67E827004FB6BE /* Custom UI */,
+				709898F91F67E698004FB6BE /* VC */,
 				709898C81F67E21F004FB6BE /* AppDelegate.swift */,
-				709898CA1F67E21F004FB6BE /* ViewController.swift */,
 				709898CC1F67E21F004FB6BE /* Main.storyboard */,
 				709898D21F67E21F004FB6BE /* Assets.xcassets */,
 				709898D41F67E21F004FB6BE /* LaunchScreen.storyboard */,
@@ -126,6 +132,24 @@
 				709898ED1F67E21F004FB6BE /* Info.plist */,
 			);
 			path = MagazineSaveUITests;
+			sourceTree = "<group>";
+		};
+		709898F91F67E698004FB6BE /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				709898FA1F67E6A6004FB6BE /* CollectionTableViewController.swift */,
+				709898FC1F67E6B1004FB6BE /* DetailViewController.swift */,
+				702F3A811F6815290083E6F9 /* ViewViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		709898FE1F67E827004FB6BE /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				709898FF1F67E849004FB6BE /* RoundedButton.swift */,
+			);
+			path = "Custom UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				709898CB1F67E21F004FB6BE /* ViewController.swift in Sources */,
 				709898C91F67E21F004FB6BE /* AppDelegate.swift in Sources */,
+				709898FB1F67E6A6004FB6BE /* CollectionTableViewController.swift in Sources */,
+				702F3A821F6815290083E6F9 /* ViewViewController.swift in Sources */,
 				709898D11F67E21F004FB6BE /* MagazineSave.xcdatamodeld in Sources */,
+				709898FD1F67E6B1004FB6BE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
